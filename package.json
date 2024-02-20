@@ -1,0 +1,25 @@
+{
+  "name": "nakathon-syntax-highlight",
+  "displayName": "Nakathon Syntax Highlight",
+  "description": "An Syntax Highligh for my programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "nakathon",
+      "aliases": ["Nakathon", "nakathon"],
+      "extensions": [".nkt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "nakathon",
+      "scopeName": "source.nkt",
+      "path": "./syntaxes/nakathon.tmLanguage.json"
+    }]
+  }
+}
