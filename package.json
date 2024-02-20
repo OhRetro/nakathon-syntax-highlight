@@ -1,7 +1,7 @@
 {
   "name": "nakathon-syntax-highlight",
   "displayName": "Nakathon Syntax Highlight",
-  "description": "An Syntax Highligh for my programming language",
+  "description": "An Syntax Highlight for my programming language, Nakathon",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.86.0"
