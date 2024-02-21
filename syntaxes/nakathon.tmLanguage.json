@@ -2,36 +2,17 @@
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "name": "Nakathon",
     "patterns": [
-        {
-            "include": "#comments"
-        },
-        {
-            "include": "#keywords"
-        },
-        {
-            "include": "#strings"
-        },
-        {
-            "include": "#numbers"
-        },
-        {
-            "include": "#bools_and_null"
-        },
-        {
-            "include": "#operators"
-        },
-        {
-            "include": "#conditional_operators"
-        },
-        {
-            "include": "#built_in_functions"
-        }
+        { "include": "#comments" },
+        { "include": "#keywords" },
+        { "include": "#strings" },
+        { "include": "#numbers" },
+        { "include": "#operators" }
     ],
     "repository": {
         "comments": {
             "patterns": [
                 {
-                    "name": "comment.line.number-sign.nakathon",
+                    "name": "comment.line.nakathon",
                     "match": "#.*$"
                 }
             ]
@@ -39,19 +20,43 @@
         "keywords": {
             "patterns": [
                 {
+                    "name": "keyword.nakathon",
+                    "match": "\\b(while|for|return|continue|break|then|end)\\b"
+                },
+                {
                     "name": "keyword.control.nakathon",
-                    "match": "\\b(if|elseif|else|while|for|return|continue|break|then|end|var|const|temp|func|not)\\b"
+                    "match": "\\b(if|elseif|else)\\b"
+                },
+                {
+                    "name": "entity.other.attribute-name.nakathon",
+                    "match": "\\b(var|const|temp|local|func)\\b"
+                },
+                {
+                    "name": "constant.language.nakathon",
+                    "match": "\\b(true|false|null)\\b"
+                },
+                {
+                    "name": "entity.name.function.nakathon",
+                    "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\s*\\("
                 }
             ]
-        },    
+        },  
         "strings": {
-            "name": "string.quoted.double.nakathon",
-            "begin": "\"",
-            "end": "\"",
             "patterns": [
                 {
-                    "name": "constant.character.escape.nakathon",
-                    "match": "\\\\(\\\"|\\\n|\\\t)"
+                    "name": "string.nakathon",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "constant.character.escape.nakathon",
+                            "match": "\\\\\""
+                        },
+                        {
+                            "name": "constant.character.escape.nakathon",
+                            "match": "\\\\(n|t)"
+                        }
+                    ]
                 }
             ]
         },
@@ -59,35 +64,15 @@
             "name": "constant.numeric.nakathon",
             "match": "\\b\\d+(\\.\\d+)?\\b"
         },
-        "bools_and_null": {
-            "patterns": [
-                {
-                    "name": "keyword.bools_null.nakathon",
-                    "match": "\\b(true|false|null)\\b"
-                }
-            ]
-        }, 
         "operators": {
             "patterns": [
                 {
-                    "name": "keyword.operator.math.nakathon",
+                    "name": "operator.math.nakathon",
                     "match": "\\+|-|\\*|/|\\*\\*|%"
-                }
-            ]
-        },
-        "conditional_operators": {
-            "patterns": [
+                },
                 {
-                    "name": "keyword.operator.comparison.nakathon",
-                    "match": "==|!=|<=|>=|<|>|&&|\\|\\|"
-                }
-            ]
-        },
-        "built_in_functions": {
-            "patterns": [
-                {
-                    "name": "constant.function.builtin.nakathon",
-                    "match": "\\b(Print|Clear)\\b"
+                    "name": "keyword.operator.nakathon",
+                    "match": "not|==|!=|<=|>=|<|>|&&|\\|\\|"
                 }
             ]
         }
