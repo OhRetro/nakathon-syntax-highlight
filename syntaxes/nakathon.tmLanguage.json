@@ -32,6 +32,10 @@
                     "match": "\\b(var|const|temp|local|func)\\b"
                 },
                 {
+                    "name": "entity.name.type",
+                    "match": "\\b(Value|String|Number|List|Boolean|Null|Function)\\b"
+                },
+                {
                     "name": "constant.language.nakathon",
                     "match": "\\b(true|false|null)\\b"
                 },
