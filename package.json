@@ -2,6 +2,7 @@
   "name": "nakathon-syntax-highlight",
   "displayName": "Nakathon Syntax Highlight",
   "description": "An Syntax Highlight for my programming language, Nakathon",
+  "publisher": "ohretro-naka",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.86.0"
@@ -21,5 +22,9 @@
       "scopeName": "source.nkt",
       "path": "./syntaxes/nakathon.tmLanguage.json"
     }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OhRetro/nakathon-syntax-highlight.git"
   }
 }
