@@ -21,7 +21,7 @@
             "patterns": [
                 {
                     "name": "keyword.nakathon",
-                    "match": "\\b(while|for|return|continue|break|then|end)\\b"
+                    "match": "\\b(while|for|return|continue|break|then|end|->)\\b"
                 },
                 {
                     "name": "keyword.control.nakathon",
@@ -71,7 +71,7 @@
         "operators": {
             "patterns": [
                 {
-                    "name": "operator.math.nakathon",
+                    "name": "keyword.operator.nakathon",
                     "match": "\\+|-|\\*|/|\\*\\*|%"
                 },
                 {
