@@ -33,7 +33,7 @@
                 },
                 {
                     "name": "entity.name.type",
-                    "match": "\\b(Value|String|Number|List|Boolean|Null|Function)\\b"
+                    "match": "\\b(Any|Value|String|Number|List|Boolean|Null|Function)\\b"
                 },
                 {
                     "name": "constant.language.nakathon",
