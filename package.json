@@ -35,16 +35,5 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/OhRetro/nakathon-syntax-highlight.git"
-	},
-	"__metadata": {
-		"id": "178e08c4-fae0-4cdc-8f34-5fd171a670f7",
-		"publisherId": "2b613570-1c7d-418c-85c3-2caa87e5efea",
-		"publisherDisplayName": "OhRetro",
-		"targetPlatform": "undefined",
-		"updated": false,
-		"isPreReleaseVersion": false,
-		"hasPreReleaseVersion": false,
-		"installedTimestamp": 1708983876757,
-		"pinned": false
 	}
 }
