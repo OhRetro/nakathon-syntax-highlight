@@ -21,7 +21,7 @@
             "patterns": [
                 {
                     "name": "keyword.nakathon",
-                    "match": "\\b(while|for|return|continue|break|then|end|->)\\b"
+                    "match": "\\b(while|for|return|continue|break|->)\\b"
                 },
                 {
                     "name": "keyword.control.nakathon",
@@ -33,7 +33,7 @@
                 },
                 {
                     "name": "entity.name.type",
-                    "match": "\\b(Any|Value|String|Number|List|Boolean|Null|Function)\\b"
+                    "match": "\\b(Value|Any|String|Number|Int|Float|List|Boolean|Bool|Null|Function)\\b"
                 },
                 {
                     "name": "constant.language.nakathon",
