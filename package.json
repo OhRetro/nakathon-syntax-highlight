@@ -3,8 +3,8 @@
 	"displayName": "Nakathon Syntax Highlight",
 	"description": "An Syntax Highlight for my programming language, Nakathon",
 	"publisher": "ohretro-naka",
-	"version": "0.0.4",
-	"icon": "assets/logo_icon.png",
+	"version": "0.0.6",
+	"icon": "./assets/logo_icon.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/OhRetro/nakathon-syntax-highlight.git"
@@ -26,6 +26,10 @@
 				"extensions": [
 					".nkt"
 				],
+				"icon": {
+					"light": "./assets/logo_icon.png",
+					"dark": "./assets/logo_icon.png"
+				},
 				"configuration": "./language-configuration.json"
 			}
 		],
