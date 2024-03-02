@@ -12,8 +12,12 @@
         "comments": {
             "patterns": [
                 {
-                    "name": "comment.line.nakathon",
+                    "name": "comment.line.number-sign.nakathon",
                     "match": "#.*$"
+                },
+                {
+                    "name": "comment.block.nakathon",
+                    "match": "###(.*?)###"
                 }
             ]
         },
@@ -29,7 +33,7 @@
                 },
                 {
                     "name": "entity.other.attribute-name.nakathon",
-                    "match": "\\b(var|const|temp|local|func)\\b"
+                    "match": "\\b(var|const|temp|local|func|class)\\b"
                 },
                 {
                     "name": "entity.name.type",
@@ -72,7 +76,7 @@
             "patterns": [
                 {
                     "name": "keyword.operator.nakathon",
-                    "match": "\\+|-|\\*|/|\\*\\*|%"
+                    "match": "\\+|-|\\*|/|\\*\\*|%|="
                 },
                 {
                     "name": "keyword.operator.nakathon",
