@@ -3,7 +3,7 @@
 	"displayName": "Nakathon Syntax Highlight",
 	"description": "An Syntax Highlight for my programming language, Nakathon",
 	"publisher": "ohretro-naka",
-	"version": "0.0.6",
+	"version": "0.0.8",
 	"icon": "./assets/logo_icon.png",
 	"repository": {
 		"type": "git",
